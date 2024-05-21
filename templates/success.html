@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Result</title>
+</head>
+<body>
+    <h1>Classification Result</h1>
+    <img src="{{ url_for('static', filename='images/' + img) }}" alt="Classified Image" width="300">
+    <h2>Predictions</h2>
+    <p>1. {{ predictions.class1 }} : {{ predictions.prob1 }}%</p>
+    <p>2. {{ predictions.class2 }} : {{ predictions.prob2 }}%</p>
+    <p>3. {{ predictions.class3 }} : {{ predictions.prob3 }}%</p>
+    <a href="/">Classify Another Image</a>
+</body>
+</html>
